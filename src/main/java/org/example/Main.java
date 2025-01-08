@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.lotto.LottoBall;
+
 import java.util.ArrayList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -7,15 +9,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(30);
-        list.add(44);
-        list.add(11);
+     LottoBall b1 = new LottoBall(10); //값 10을 주지않으면 제대로 동작하지 않음 ->제약조건 걸어둠
 
-        System.out.println(list);
-
-        list.remove(44);
-        System.out.println(list);
+    System.out.println(b1);
 
 
     }
